@@ -144,3 +144,6 @@ tests/test1.inp.stderr
 tests/test1.inp.stdout
 tests/testsuite
 tests/testsuite.log
+wmm_file
+wmm_grid
+wmm_point
