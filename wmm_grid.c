@@ -363,16 +363,16 @@ INPUT: minimum :Data structure with the following elements (minimum limits of th
                     
                     if(Geoid->UseGeoid == 1)
                     {
-                        if(PrintOption == 1) fprintf(fileout, "%5.2f %6.2f %8.4f %7.2f %10.2f", minimum.phi, minimum.lambda, minimum.HeightAboveGeoid, StartDate.DecimalYear, PrintElement);
-                        else printf("%5.2f %6.2f %8.4f %7.2f %10.2f", minimum.phi, minimum.lambda, minimum.HeightAboveGeoid, StartDate.DecimalYear, PrintElement);
+                        if(PrintOption == 1) fprintf(fileout, "%5.2f %6.2f %8.4f %7.2f %14.6f", minimum.phi, minimum.lambda, minimum.HeightAboveGeoid, StartDate.DecimalYear, PrintElement);
+                        else printf("%5.2f %6.2f %8.4f %7.2f %14.6f", minimum.phi, minimum.lambda, minimum.HeightAboveGeoid, StartDate.DecimalYear, PrintElement);
                     } else
                     {
-                        if(PrintOption == 1) fprintf(fileout, "%5.2f %6.2f %8.4f %7.2f %10.2f", minimum.phi, minimum.lambda, minimum.HeightAboveEllipsoid, StartDate.DecimalYear, PrintElement);
-                        else printf("%5.2f %6.2f %8.4f %7.2f %10.2f", minimum.phi, minimum.lambda, minimum.HeightAboveEllipsoid, StartDate.DecimalYear, PrintElement);
+                        if(PrintOption == 1) fprintf(fileout, "%5.2f %6.2f %8.4f %7.2f %14.6f", minimum.phi, minimum.lambda, minimum.HeightAboveEllipsoid, StartDate.DecimalYear, PrintElement);
+                        else printf("%5.2f %6.2f %8.4f %7.2f %14.6f", minimum.phi, minimum.lambda, minimum.HeightAboveEllipsoid, StartDate.DecimalYear, PrintElement);
                     }
                     if(UncertaintyOption == 1) {
-                        if(PrintOption == 1) fprintf(fileout, " %7.2f", ErrorElement);
-                        else printf(" %7.2f", ErrorElement);
+                        if(PrintOption == 1) fprintf(fileout, " %13.6f", ErrorElement);
+                        else printf(" %13.6f", ErrorElement);
                     }
                     if(PrintOption == 1) fprintf(fileout, "\n");
                     else printf("\n"); /* Complete line */
